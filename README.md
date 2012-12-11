@@ -14,9 +14,9 @@ ______________________
 ______________________
 直接使用    
 
-java -jar CaptureImage.jar d://xxx.jpg    
+`java -jar CaptureImage.jar d://xxx.jpg`    
 或者    
-java -jar CaptureImage.jar ~/xxx.jpg    
+`java -jar CaptureImage.jar ~/xxx.jpg`  
 即可    
 # 计划中功能
 _____________________
