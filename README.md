@@ -28,5 +28,6 @@ _____________________
 # 其他
 _____________________
 该程序一开始是为了配合emacs截图而作,下面是emacs截图插件:   
+https://github.com/iyf/capture-image
 
 我的blog:http://iyf.cc    
