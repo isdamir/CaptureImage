@@ -23,7 +23,6 @@ import javax.swing.*;
  */
 public class ScreenWindow extends JFrame {
 
-    private static final long serialVersionUID = -3758062802950480258L;
     private boolean isDrag = false;
     private int x = 0;
     private int y = 0;
@@ -126,12 +125,11 @@ public class ScreenWindow extends JFrame {
                 label.setIcon(new ImageIcon(bufferedimage));
             }
         });
-
         this.setUndecorated(true);
         this.getContentPane().add(label);
-        this.setSize(screenSize.width, screenSize.height);
-        this.setVisible(true);
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        this.setVisible(true);
+        this.setBounds(0, 0,screenSize.width, screenSize.height); 
     }
 
     void SaveFile() throws Exception {
