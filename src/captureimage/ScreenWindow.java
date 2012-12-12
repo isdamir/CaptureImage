@@ -128,8 +128,13 @@ public class ScreenWindow extends JFrame {
         this.setUndecorated(true);
         this.getContentPane().add(label);
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        GraphicsDevice gd=GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+        if (gd.isFullScreenSupported()) {
+            gd.setFullScreenWindow(this);
+        } else {
+            JOptionPane.showMessageDialog(null, "无法完全全屏");
+        }
         this.setVisible(true);
-        this.setBounds(0, 0,screenSize.width, screenSize.height); 
     }
 
     void SaveFile() throws Exception {
